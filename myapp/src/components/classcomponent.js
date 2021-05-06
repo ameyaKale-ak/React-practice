@@ -4,10 +4,11 @@ import React,{Component} from 'react';
 //es6 class should react component
 class Welcome extends Component{
     render(){
+        const {name,titan}=this.props;
         return (
         <div>
         <h1>This is from Class Component</h1>
-        <h2>{this.props.name} Titan name is {this.props.titan}</h2> {/* Accessing props in class component */}
+        <h2>{name} Titan name is {titan}</h2> {/* Accessing props in class component */}
         </div>
         )
     }

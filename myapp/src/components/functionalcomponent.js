@@ -1,12 +1,13 @@
 //alway include
 import React from 'react';
 
-//function without props
+//function with props
 function greet(props){
+    const {name,titan}=props //destucturing props in function body
     return (
     <div>
         <h1>This is a function component </h1>
-        <h2>{props.name} Titan name is {props.titan}</h2> {/* Accessing props */}
+        <h2>{name} Titan name is {titan}</h2> {/*Accessing props in function */}
         {props.children}
     </div>
     )
