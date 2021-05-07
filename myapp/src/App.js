@@ -4,6 +4,8 @@ import Greet from './components/functionalcomponent'
 import Welcome from './components/classcomponent'
 import Message from './components/state'
 import Counter from './components/counter'
+import Click from './components/functionEventHandlig'
+import ClassEventH from './components/classEventHandling'
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Welcome name='Armin' titan='Colossal Titan '/> {/*Props in class component*/}
       <Message/>
       <Counter/>
+      <Click/>
+      <ClassEventH/>
     </div>
   );
 }
